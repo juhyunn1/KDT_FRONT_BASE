@@ -37,16 +37,23 @@
 #event .event_product .product_img {
   height: 180px;
   border: 1px solid #e5e5e5;
-  background-color: var(--emart_gray);
+  /* background-color: var(--emart_gray); */
   margin-bottom: 30px;
 }
 #event .event_product .product_img img {
   width: 100%;
   height: 100%;
+  transition: 0.5s;
+}
+#event .event_product .product_img img:hover {
+  opacity: 0.75;
+  transition: 0.5s;
 }
 #event .event_product .product_title {
   height: 60px;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 #event .event_product p {
   text-align: center;

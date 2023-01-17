@@ -4,8 +4,10 @@ header {
   height: 139px;
   background-color: white;
   border-bottom: 1px solid #E5E5E5;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 
 header .top_menu {
@@ -40,7 +42,6 @@ header .top_menu nav ul li a:hover {
   color: var(--emart_yellow);
 }
 
-
 /* header_main_menu */
 header .main_menu {
   width: 1140px;
@@ -48,6 +49,8 @@ header .main_menu {
   display: flex;
   justify-content: space-between; /* 양쪽 끝으로 뿌린다 */
   align-items: center; /* 안에 요소끼리 서로 수직 중앙정렬 해준다 */
+  
+  font-family: 'Gugi', cursive;
 }
 
 header .main_menu .logo {
