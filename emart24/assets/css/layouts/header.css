@@ -1,0 +1,87 @@
+/* header_top */
+header {
+  width: 100%;
+  height: 139px;
+  background-color: white;
+  border-bottom: 1px solid #E5E5E5;
+  position: fixed;
+  top: 0;
+}
+
+header .top_menu {
+  height: 39px;
+  background-color: #F1F1F2;
+}
+
+header .top_menu nav {
+  width: 1140px;
+  margin: 0 auto;
+}
+/* 상위 박스 */
+header .top_menu nav ul {
+  height: 39px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* flex 대상 요소 */
+header .top_menu nav ul li {
+  list-style: none;
+  margin-right: 20px;
+  font-size: 0.8rem;
+}
+header .top_menu nav ul li:last-child {
+  margin-right: 0px;
+}
+header .top_menu nav ul li a {
+  color: var(--emart_gray);
+}
+header .top_menu nav ul li a:hover {
+  color: var(--emart_yellow);
+}
+
+
+/* header_main_menu */
+header .main_menu {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* 양쪽 끝으로 뿌린다 */
+  align-items: center; /* 안에 요소끼리 서로 수직 중앙정렬 해준다 */
+}
+
+header .main_menu .logo {
+  width: 180px;
+  height: 100px;
+  background-image: url("https://blog.kakaocdn.net/dn/u9aSV/btqwN3sWVRV/oSILdqMw9ToP2QkcsTcgO0/img.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+header .main_menu .logo h1 {
+  font-size: 0;
+}
+
+header .main_menu nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header .main_menu nav ul li {
+  list-style: none;
+  margin-right: 50px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+header .main_menu nav ul li:last-child {
+  margin-right: 0px;
+}
+header .main_menu nav ul li a {
+  color: var(--emart_black);
+  transition: 0.5s;
+}
+header .main_menu nav ul li a:hover {
+  color: var(--emart_yellow);
+  transition: 0.5s;
+}
+header .main_menu nav ul li ul {
+  display: none;
+}

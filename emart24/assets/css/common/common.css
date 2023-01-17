@@ -1,0 +1,18 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body a {
+  text-decoration: none; /* 밑줄 없앤다 */
+}
+body ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* section banner */
+section {
+  width: 1500px;
+  margin: 0 auto;
+}
