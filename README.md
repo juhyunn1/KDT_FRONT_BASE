@@ -1,2 +1,2 @@
-# KDT_FRONT_BASE
+# KDT_FRONT_BASICS
 html5 + css3 + javascript
