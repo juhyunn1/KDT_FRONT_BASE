@@ -50,7 +50,7 @@ header .main_menu {
   justify-content: space-between; /* 양쪽 끝으로 뿌린다 */
   align-items: center; /* 안에 요소끼리 서로 수직 중앙정렬 해준다 */
   
-  font-family: 'Gugi', cursive;
+  /* font-family: 'Jua', sans-serif; */
 }
 
 header .main_menu .logo {
@@ -87,4 +87,40 @@ header .main_menu nav ul li a:hover {
 }
 header .main_menu nav ul li ul {
   display: none;
+}
+
+
+/* 미디어 쿼리 */
+@media screen and (min-width: 576px) { 
+  header .top_menu nav {
+    width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) { 
+  header .top_menu nav {
+    width: 720px;
+  }
+  header .top_menu {
+    background-color: #d8ba25;
+  }
+}
+
+@media screen and (min-width: 992px) { 
+  header .top_menu nav {
+    width: 960px;
+  }
+  header .top_menu {
+    background-color: #3131f0;
+  }
+}
+
+@media screen and (min-width: 1200px) { 
+  header .top_menu {
+    background-color: #F1F1F2;
+  }
+}
+
+@media screen and (min-width: 1400px) { 
+
 }

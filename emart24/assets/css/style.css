@@ -4,9 +4,9 @@
 /* common */
 @import url(common/color.css);
 @import url(common/common.css);
-@import url(common/font.css);
+@import url(common/fonts.css);
 
-/* layout */
+/* layouts */
 @import url(layouts/header.css);
 
 /* pages */
