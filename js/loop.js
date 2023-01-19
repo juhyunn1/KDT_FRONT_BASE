@@ -6,6 +6,18 @@ const arr = [
   [21, 22, 23, 24, 25]
 ]
 
+
+for(let i = 0; i < 5; i++) {
+  let str = "";
+  for(let j = 0; j < 5; j++) {
+    let x = arr[5-j-1][i].toString();
+    str += x.padStart(2, '0')+" ";
+  }
+  console.log(str);
+}
+
+
+
 for(let i=0; i<5; i++) {
   let str = '';
   for(let j=0; j<5 ; j++) {
@@ -19,6 +31,7 @@ for(let i=0; i<5; i++) {
 
 
 // loop
+console.log('[loop]');
 function sumLoop(num) {
   let sum = 0;
   for(let i=1; i<=num; i++) {
@@ -34,6 +47,7 @@ sumLoop(10000);
 
 
 // recursive
+console.log('[recursive]');
 function sumRe(num) {
   if(num == 1)
     return 1;
@@ -45,6 +59,7 @@ console.log(sumRe(10000));
 
 
 // loop + recursive
+console.log('[loop + recursive]');
 function sumLoopRe(num) {
   let sum = 0;
   for(let i=1; i<=num; i++) {
@@ -55,3 +70,22 @@ function sumLoopRe(num) {
 }
 
 sumLoopRe(10000);
+
+
+// forEach
+console.log('[forEach]');
+arr.forEach( item => {
+  console.log(item); // item은 arr[인덱스]
+});
+
+// for of
+console.log('[for of]');
+for(let x of arr) {
+  console.log(x); // x는 arr[인덱스]
+}
+
+// for in
+console.log('[for in]');
+for(let i in arr) {
+  console.log(i); // i는 인덱스(0~배열길이-1)
+}

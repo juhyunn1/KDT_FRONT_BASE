@@ -39,3 +39,15 @@ const myFunction = (name) => {
     }
   }
 }
+
+
+data.forEach( item => {
+  let txt = "";
+  txt = `
+    <p>ID: ${item.id}</p>
+    <p>Name: ${item.name}</p>
+    <p>Email: ${item.email}</p>
+    <hr>
+ `;
+ document.getElementById("app").innerHTML += txt;
+});
