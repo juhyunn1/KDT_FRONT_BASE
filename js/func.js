@@ -20,3 +20,10 @@ function setName() {
   let name = window.prompt('이름을 입력하세요');
   document.getElementById('app').innerHTML = `<h3>${getName(name)}<h3>`;
 }
+
+
+const minus = display((n, m) => { return n-m });
+
+function display(x) {
+  console.log(x(6, 9));
+}
